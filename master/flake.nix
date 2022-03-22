@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-zxcvbn-master.flake = false;
+  inputs.src-zxcvbn-master.ref   = "refs/heads/master";
   inputs.src-zxcvbn-master.owner = "status-im";
-  inputs.src-zxcvbn-master.ref   = "master";
   inputs.src-zxcvbn-master.repo  = "nim-zxcvbn";
   inputs.src-zxcvbn-master.type  = "github";
   
