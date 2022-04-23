@@ -57,6 +57,23 @@
         "type": "github"
       }
     },
+    "src-unittest2-v0_0_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1639728552,
+        "narHash": "sha256-gHfxt4eNLaC9KNh3kC1zFNV42UcDipfyoiCnDHyyb+k=",
+        "owner": "status-im",
+        "repo": "nim-unittest2",
+        "rev": "4e2893eacb916c7678fdc4935ff7420f13bf3a9c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/tags/v0.0.3",
+        "repo": "nim-unittest2",
+        "type": "github"
+      }
+    },
     "src-zxcvbn-master": {
       "flake": false,
       "locked": {
@@ -82,15 +99,16 @@
         "nixpkgs": [
           "nixpkgs"
         ],
-        "src-testutils-v0_4_2": "src-testutils-v0_4_2"
+        "src-testutils-v0_4_2": "src-testutils-v0_4_2",
+        "unittest2": "unittest2"
       },
       "locked": {
         "dir": "v0_4_2",
-        "lastModified": 1648272142,
-        "narHash": "sha256-5BxwE5e1DCYHKsOko2o8947cZaGyQmEMZL3T+cPXTh8=",
+        "lastModified": 1650750632,
+        "narHash": "sha256-rjurdrNFJb271pEyYuZzytD+ZfBEBc98BZfZevGY9ao=",
         "owner": "nim-nix-pkgs",
         "repo": "testutils",
-        "rev": "96fad7ea8b688ef3485c8f424c741ed7a5eff71e",
+        "rev": "cd584ea1ee16d80f48be0924e100ff6df68bc879",
         "type": "github"
       },
       "original": {
@@ -98,6 +116,35 @@
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "testutils",
+        "type": "github"
+      }
+    },
+    "unittest2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "testutils",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "testutils",
+          "nixpkgs"
+        ],
+        "src-unittest2-v0_0_3": "src-unittest2-v0_0_3"
+      },
+      "locked": {
+        "dir": "v0_0_3",
+        "lastModified": 1650750657,
+        "narHash": "sha256-h0tHKJr7csHNpXn/Ai9STzz4Fp/St4E/Kex6Jn4u8ys=",
+        "owner": "nim-nix-pkgs",
+        "repo": "unittest2",
+        "rev": "6255fb952e1bba7526b4a88be51e63595cd050e6",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_0_3",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "unittest2",
         "type": "github"
       }
     }
